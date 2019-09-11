@@ -1,8 +1,5 @@
 import { expect } from 'chai';
-import { createSandbox } from 'sinon';
-import { notImplemented } from '../src/index';
-
-const sandbox = createSandbox();
+import { notImplemented } from '../src';
 
 describe('notImplemented', () => {
   it('should return null', () => {
