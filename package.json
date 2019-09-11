@@ -1,0 +1,27 @@
+{
+  "name": "ts-kata-template",
+  "version": "1.0.0",
+  "description": "A basic typescript kata template",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "@types/sinon": "^7.0.13",
+    "@types/mocha": "^5.2.7",
+    "mocha": "^6.2.0",
+    "sinon": "^7.3.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "run": "node built/index.js",
+    "test": "mocha --require ts-node/register \"test/**/*.{ts,tsx}\"",
+    "clean": "rm -rf ./built",
+    "build": "npm run clean && tsc"
+  },
+  "author": "sblausten",
+  "license": "ISC"
+}
